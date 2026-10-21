@@ -36,6 +36,8 @@ A customer is counted as **churned** when `cancellation_date` is not null.
 ├── 02_subscription_clean.sql    # Builds subscription_clean
 ├── 03_support_clean.sql         # Builds support_clean
 └── 04_analysis.sql              # Business questions and insights
+├── churn_dashboard.pbix         # Power BI dashboard
+├── dashboard.png                # Dashboard screenshot
 ```
 
 ## Data Cleaning
