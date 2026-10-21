@@ -74,3 +74,7 @@ Validation checks (row counts, distinct values, NULL counts) are included after 
 1. In SSMS: `CREATE DATABASE churn_db;`
 2. Open `load_data.ipynb`, set `SERVER` to your SQL Server instance, and run all cells (expected counts: 10040, 10000, 4005).
 3. Run the SQL files in order: `01`, `02`, `03`, then `04`. `00_profiling.sql` can be run any time to inspect the raw data.
+
+## Dashboard
+![Customer churn dashboard](dashboard.png)
+Built in Power BI on the cleaned SQL Server tables (`customer_clean`, `subscription_clean`, `support_clean`), joined on `customerid`. A plan slicer filters the other charts; the plan chart is excluded from the slicer so the comparison stays visible.
